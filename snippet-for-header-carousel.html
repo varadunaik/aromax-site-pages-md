@@ -1,0 +1,58 @@
+<div class="carousel-container">
+
+  <div class="carousel">
+    <a href="https://www.aromaxcreation.com/" class="card" target="_top">Home</a>
+    <a href="https://www.aromaxcreation.com/perfume" class="card" target="_top">Perfume</a>
+    <a href="https://www.aromaxcreation.com/shop-all" class="card" target="_top">Shop All</a>
+    <a href="https://www.aromaxcreation.com/brand-inspiration" class="card" target="_top">Brand Inspiration</a>
+    <a href="https://www.aromaxcreation.com/new-arrival" class="card" target="_top">New Arrival</a>
+    <a href="https://www.aromaxcreation.com/crazy-deals" class="card" target="_top">Crazy Deals</a>
+  </div>
+
+</div>
+
+<style>
+.carousel-container {
+  width: 320px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* 💎 LUXURY MATCHED STYLE */
+.carousel .card {
+  width: auto;
+  height: 20px;
+  
+  background: #1f3a33;           /* dark green */
+  color: #e6d3a3;                /* gold/beige text */
+  
+  font-size: 11px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+
+  border: 1px solid #cbb27c;     /* subtle gold border */
+}
+
+/* ✨ HOVER EFFECT */
+.carousel .card:hover {
+  background: #cbb27c;
+  color: #1f3a33;
+}
+</style>
