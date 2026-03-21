@@ -1,0 +1,45 @@
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Get 10% off on prepaid orders</span>
+    <span>Use code AROMAX10 for 10% off</span>
+    <span>Free shipping above order of ₹1499</span>
+
+    <!-- duplicate for seamless loop -->
+    <span>Get 10% off on prepaid orders</span>
+    <span>Use code AROMAX10 for 10% off</span>
+    <span>Free shipping above order of ₹1499</span>
+  </div>
+</div>
+
+<style>
+.ticker {
+  width: 100%;
+  height: 28px;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-track {
+  display: flex;
+  gap: 40px;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.ticker span {
+  color: #fff;
+  font-size: 13px;
+}
+
+/* 🔥 Smooth infinite loop */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
